@@ -110,6 +110,13 @@ source .venv/bin/activate
 
 ---
 
+
+Activate Ollama into source:
+
+```bash
+python -m pip install ollama
+```
+
 ## Install Dependencies
 
 ```bash
