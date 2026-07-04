@@ -207,3 +207,24 @@ ollama show qwen3:8b
 - RAG with PDF documents
 - Docker deployment
 - Multi-model support
+
+## 🚀  BACK END
+
+Cài FastAPI. || Install Fast API 
+Nó chỉ giúp bạn nhận và trả dữ liệu qua HTTP.
+It's only help you receive and response data via HTTP
+Bạn nên cài bên trong virtual environment (.venv) của project, không nên cài toàn cục.
+You should install into virtual enviroment (.venv) of project, shouldn't install into global
+
+```bash
+pip install fastapi uvicorn
+```
+
+Sau đó dùng lệnh này để chạy API 
+After, you can use this command to run server
+```bash
+uvicorn main:app --reload
+```
+
+Sau khi run dòng trên thì copy đường dẫn http://127.0.0.1:8000/docs 
+giao diện Swagger để test API -> Tiến hành test response trên đó
