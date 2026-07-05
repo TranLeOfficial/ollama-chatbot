@@ -228,3 +228,36 @@ uvicorn main:app --reload
 
 Sau khi run dòng trên thì copy đường dẫn http://127.0.0.1:8000/docs 
 giao diện Swagger để test API -> Tiến hành test response trên đó
+
+
+## 🚀  Uprade to use on website or mobile
+
+- Tạo một file ollama_server.py
+- Viết hàm chat_with_ollama_ai với tham số đầu vào là message -> nhận response từ AI model
+- Flow (lần này mình sẽ demo trên iOS, hoàn toàn sử dụng được ở các nền tảng gọi API)
+🆘 Chú Ý: 
++ Thông thường Chỉ test được trên simulator 
++ Để test trên iphone thật chúng ta bắt buộc dùng chung mạng wifi với MACBOOK
+
+SwiftUI (iPhone)
+
+        │
+        │ HTTP POST
+        ▼
+
+FastAPI
+
+        │
+        ▼
+
+Ollama
+
+        │
+        ▼
+
+FastAPI
+
+        │
+        ▼
+
+SwiftUI hiển thị câu trả lời
